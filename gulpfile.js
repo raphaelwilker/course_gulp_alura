@@ -45,6 +45,7 @@ gulp.task('server', function() {
             baseDir: 'src'
         }
     });
+    
     gulp.watch('src/**/*').on('change', browserSync.reload);
 
     gulp.watch('src/js/**/*.js').on('change', function(event) {
